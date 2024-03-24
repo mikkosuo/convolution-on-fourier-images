@@ -1,4 +1,4 @@
-name: kandifresh
+name: fourierbackbone
 channels:
   - defaults
 dependencies:
@@ -84,4 +84,4 @@ dependencies:
       - visualkeras==0.0.2
       - werkzeug==3.0.1
       - wrapt==1.16.0
-prefix: /home/mikko/anaconda3/envs/kandifresh
+prefix: /home/mikko/anaconda3/envs/fourierbackbone
