@@ -31,11 +31,11 @@ confusionMatrices = {}
 for modelName, modelInfo in ModelInfo.items():
     print(modelInfo["ModelPath"])
     loaded_model = tf.keras.models.load_model(modelInfo["ModelPath"]+".keras")
-    if PLOT_MODELS:
-        path = "figures/model_" + modelInfo["ShortModelName"] + ".png"
-        font = ImageFont.truetype("arial.ttf", 12)
-        visualkeras.layered_view(loaded_model, to_file="figures/" +modelInfo["ShortModelName"] + ".png", font=font, spacing = 23,
-                                type_ignore=[tf.keras.layers.BatchNormalization])
+    # if PLOT_MODELS:
+    #     path = "figures/model_" + modelInfo["ShortModelName"] + ".png"
+    #     font = ImageFont.truetype("arial.ttf", 12)
+    #     visualkeras.layered_view(loaded_model, to_file="figures/" +modelInfo["ShortModelName"] + ".png", font=font, spacing = 23,
+    #                             type_ignore=[tf.keras.layers.BatchNormalization])
     if modelInfo["Dataset"] == "Cifar10":
         (_, _), (X_test,Y_test) = datasets.cifar10.load_data()
     elif modelInfo["Dataset"] == "MNIST":
