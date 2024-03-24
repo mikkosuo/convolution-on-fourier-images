@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay , classification_report, accuracy_score
 from header import ModelInfo, TRAINING_HISTORY_FOLDER_PATH, CIFAR10_CLASS_LABELS, LINE_STYLE, LINE_COLORS
 import pickle
-import visualkeras
+#import visualkeras
 from PIL import ImageFont
 
 # If the models aren't trained yet, train them with training.py 
